@@ -62,17 +62,16 @@ This project was developed as part of the **AICTE Internship Program**. It is a 
 - **HTML/CSS** – Frontend templates ## Screenshots
 
 ### Home Page
-![Home Page]
-(https://github.com/user-attachments/assets/c037186f-e420-49bf-83a3-09317a1360c0)
+![HOME](https://github.com/user-attachments/assets/db3b6eef-2a24-4704-8770-6732ce27a36a)
 
 
 ### Encryption Page
-![Encryption Page]
-(https://github.com/user-attachments/assets/1b0412c9-c686-4b8d-a512-c1b3814ce4de)
+![encrypt](https://github.com/user-attachments/assets/85e8f252-4956-4b77-b128-1249464f9e7a)
+
 
 ### Decryption Page
-![Decryption Page]
-(https://github.com/user-attachments/assets/daa38a56-f0b6-407e-8dc4-9e0e860f6cf7)
+![decrypt](https://github.com/user-attachments/assets/4f6386ed-e294-4d19-8409-1c750ec8ec91)
+
 
 
 
