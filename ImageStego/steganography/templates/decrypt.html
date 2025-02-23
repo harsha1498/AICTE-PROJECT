@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Decrypt Image{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4 text-center">Decrypt Your Image</h2>
+
+    <form method="post" enctype="multipart/form-data" class="card p-4 shadow">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success mt-3 w-100">Decrypt & Download</button>
+    </form>
+
+    {% if decrypted_message %}
+        <div class="alert alert-info mt-4 text-center">
+            <h5>🔓 Decrypted Message:</h5>
+            <p class="fw-bold text-primary">{{ decrypted_message }}</p>
+        </div>
+    {% endif %}
+
+    {% if decrypted_image_url %}
+        <div class="text-center mt-3">
+            <a href="{{ decrypted_image_url }}" download class="btn btn-primary">
+                ⬇️ Download Decrypted Image
+            </a>
+        </div>
+    {% endif %}
+
+    {% if error %}
+        <div class="alert alert-danger mt-4 text-center">
+            <strong>Error:</strong> {{ error }}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

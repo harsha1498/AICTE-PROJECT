@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block title %}Encrypt Image{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="mb-4">Encrypt Your Image</h2>
+        <form method="post" enctype="multipart/form-data" class="card p-4 shadow">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary mt-3">Encrypt & Download</button>
+        </form>
+    </div>
+{% endblock %}

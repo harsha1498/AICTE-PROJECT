@@ -1,0 +1,19 @@
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Virtual environment (venv)
+venv/
+env/
+# Secret environment files
+.env
+*.env
+# Local SQLite database
+*.sqlite3
+
+# Django migration files (optional)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+.gradle/
+
